@@ -1,6 +1,7 @@
 body {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   color: #22223b;
+  margin: 1;
 }
 
 .header-logo {
@@ -15,6 +16,31 @@ footer {
   background-color: #c9ada7;
 }
 
-.lora-main-page {
+.lora {
   font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+.lora-main {
+  font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+.lora-woman {
+  font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+.lora-details {
+  font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+.carousel {
+  margin: 40px;
+  display: flex;
+
+  width: 445px;
+}
+
+.small-picture {
+  height: 100px;
+
+  margin: 5px;
 }
