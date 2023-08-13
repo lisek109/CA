@@ -34,22 +34,28 @@ footer {
 
 .collection-item {
   width: 300px;
-  height: 400px;
+  height: 450px;
 }
 
 .collection-picture {
   width: 150px;
 }
 
-.carousel {
-  margin: 40px;
-  display: flex;
-
-  width: 445px;
+.small-picture {
+  width: 98px;
+  margin: 5px;
 }
 
-.small-picture {
-  height: 100px;
+.big-picture {
+}
 
-  margin: 5px;
+.slider {
+  width: 445px;
+  display: flex;
+  overflow-x: auto;
+  height: 500px;
+}
+
+.slider-nav {
+  width: 445px;
 }
