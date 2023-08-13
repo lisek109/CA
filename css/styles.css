@@ -4,6 +4,11 @@ body {
   margin: 1;
 }
 
+a {
+  color: #22223b;
+  text-decoration: none;
+}
+
 .header-logo {
   width: 200px;
 }
@@ -24,12 +29,18 @@ footer {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
-.lora-woman {
+.lora-details {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
-.lora-details {
+.collection-item h2 {
   font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+.collecion-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .collection-item {
@@ -37,16 +48,13 @@ footer {
   height: 450px;
 }
 
-.collection-picture {
+.collection-item img {
   width: 150px;
 }
 
-.small-picture {
-  width: 98px;
+.slider-nav img {
+  width: 100px;
   margin: 5px;
-}
-
-.big-picture {
 }
 
 .slider {
@@ -58,4 +66,5 @@ footer {
 
 .slider-nav {
   width: 445px;
+  display: flex;
 }
