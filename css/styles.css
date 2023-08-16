@@ -25,11 +25,48 @@ footer {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
-.lora-main {
+.main-text h2 {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
-.empty-basket {
+.main-text p {
+  font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+.checkout-main {
+  margin: auto;
+  text-align: center;
+}
+
+.checkout-main p {
+  opacity: 0.6;
+}
+
+.checkout-main img {
+  width: 150px;
+  margin-top: 100px;
+}
+
+.checkout-thumb img {
+  margin: 50px;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  background-color: #22223b;
+  opacity: 0.3;
+  margin: auto;
+  box-shadow: 2px 1px 4px;
+}
+
+.checkout {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.basket-main img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -37,7 +74,7 @@ footer {
   display: block;
 }
 
-.basket-title {
+.basket-main h1 {
   text-align: center;
   line-height: 50px;
 }
