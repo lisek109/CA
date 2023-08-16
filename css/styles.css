@@ -29,6 +29,32 @@ footer {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
+.empty-basket {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 20%;
+  display: block;
+}
+
+.basket-title {
+  text-align: center;
+  line-height: 50px;
+}
+
+.basket-picture {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  width: 80px;
+  height: auto;
+}
+
+.basket-picture img {
+  flex: 1 1 auto;
+  width: 400px;
+}
+
 .collection-item h2 {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
