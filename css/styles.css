@@ -33,6 +33,28 @@ footer {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
+.quantity {
+  display: flex;
+  align-items: center;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: solid 2px;
+  border-radius: 15%;
+}
+
+.plus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.minus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 #trash {
   width: 20px;
   height: 40px;
@@ -44,7 +66,7 @@ footer {
   font-size: 20px;
 }
 
-.basket-item img {
+.basket img {
   width: 110px;
   height: 140px;
   margin-left: 5px;
@@ -62,17 +84,19 @@ footer {
 .b-t-child {
   display: flex;
   flex-direction: column;
-  height: 250px;
 }
 
-.basket-item {
+.basket {
   display: flex;
   flex-wrap: wrap;
   /* align-content: space-between; */
   flex-direction: column;
-  margin-left: 30px;
-  width: 600px;
+  margin: 30px;
+  width: 500px;
   height: 250px;
+}
+
+.item {
   border-color: #f2e9e4;
   border-radius: 5%;
   background-color: #f2e9e4;
