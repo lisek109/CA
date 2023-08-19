@@ -33,6 +33,51 @@ footer {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
+#trash {
+  width: 20px;
+  height: 40px;
+}
+
+.checkout-header {
+  margin-left: 30px;
+  display: flex;
+  font-size: 20px;
+}
+
+.basket-item img {
+  width: 110px;
+  height: 140px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+.basket-item-name {
+  margin-top: 15px;
+}
+
+.basket-space {
+  margin-left: 300px;
+}
+
+.b-t-child {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+.basket-item {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: space-between; */
+  flex-direction: column;
+  margin-left: 30px;
+  width: 600px;
+  height: 250px;
+  border-color: #f2e9e4;
+  border-radius: 5%;
+  background-color: #f2e9e4;
+}
+
 .checkout-main {
   margin: auto;
   text-align: center;
