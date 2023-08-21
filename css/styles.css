@@ -25,16 +25,61 @@ footer {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
-.main-text h2 {
-  font-family: "Lora", Arial, Helvetica, sans-serif;
-}
-
-.main-text p {
-  font-family: "Lora", Arial, Helvetica, sans-serif;
-}
-
 .main-content {
   display: flex;
+}
+
+.contact-big-field {
+  border: #22223b solid 1px;
+  border-radius: 5%;
+  margin: 40px 0px;
+  height: 150px;
+}
+
+.contact-typing-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.contact-typing-fields div {
+  border: #22223b solid 1px;
+  border-radius: 5%;
+  height: 20px;
+  padding: 10px;
+}
+
+.contact-content {
+  margin: 150px 30px;
+}
+
+.contact-field {
+  width: 550px;
+  height: 130px;
+  margin: 40px 0px;
+}
+
+.contact-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-fields p {
+  margin-left: 50px;
+}
+
+.contact-fields h3 {
+  margin-left: 50px;
+}
+
+.hr {
+  border: none;
+  border-top: 2px solid #000;
+  opacity: 0.2;
+}
+
+.second-hr {
+  margin-bottom: 50px;
 }
 
 .quantity {
