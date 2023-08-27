@@ -13,6 +13,10 @@ a {
   width: 200px;
 }
 
+header img {
+  cursor: pointer;
+}
+
 header {
   background-color: #f2e9e4;
 }
@@ -34,10 +38,12 @@ footer {
   height: 150px;
 }
 
-.contact-typing-fields {
-  display: grid;
+.contact-typing-fields div {
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 30px; */
+  display: inline;
+  margin: 5px;
 }
 
 .contact-typing-fields div {
