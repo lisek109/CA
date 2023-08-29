@@ -45,11 +45,11 @@
       <section>
         <hr class="hr first-hr" />
         <div class="contact-fields">
-          <div class="item contact-field">
+          <div class="item">
             <h3>Contact</h3>
             <p>contact@rainydays.com</p>
           </div>
-          <div class="item contact-field">
+          <div class="item">
             <h3>Customer support</h3>
             <p>support@rainydays.com</p>
             <p>+47 12 34 56 78</p>
@@ -59,16 +59,36 @@
       </section>
       <section>
         <h1>Contact Us</h1>
-        <div class="contact-typing-fields">
-          <div>Firstname</div>
-          <div>Lastname</div>
-          <div>Email</div>
-        </div>
-        <div class="contact-big-field"></div>
-        <div class="contact-check-button">
-          <div class="contact-check"></div>
-          <div class="contact-button"></div>
-        </div>
+        <form action="" method="get">
+          <div class="contact-typing-fields">
+            <input type="text" name="firstname" placeholder="First Name" />
+            <input type="text" name="lastname" placeholder="Last Name" />
+            <input type="email" name="email" placeholder="Email" />
+          </div>
+          <textarea
+            type="text"
+            name="message"
+            placeholder="Type your message here.."
+            class="contact-big-field"
+          ></textarea>
+
+          <div class="contact-check-fields">
+            <div class="contact-check">
+              <input
+                type="checkbox"
+                name="robot-check"
+                value="robot-check"
+                id="robot-check"
+              />
+
+              <label for="robot-check" class="robot-check-label"
+                >I'm not a robot</label
+              >
+              <img src="image/recaptcha.svg" alt="recaptcha icon" />
+            </div>
+            <input type="button" value="Send" class="send-button" />
+          </div>
+        </form>
       </section>
     </main>
     <footer>
