@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+input {
+  accent-color: #ff4d6e;
+}
+
 main {
   margin-left: 50px;
   margin-right: 50px;
@@ -114,7 +118,7 @@ footer {
   width: 20%; */
   height: auto;
   border: #22223b solid 1px;
-  padding: 15px 0px;
+  padding: 5px 0px;
   /* position: relative; */
   display: flex;
   align-items: center;
@@ -146,14 +150,15 @@ footer {
 }
 
 .send-button {
-  height: 70px;
-  width: 15%;
+  height: auto;
+  width: 10%;
   background-color: #22223b;
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
   font-family: "Rubik", Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .hr {

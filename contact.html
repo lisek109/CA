@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lf7EeUnAAAAAP7yRqBDv5bfJcYguwA4fzzCTt5P"></script>
+    ...
+
+    <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.enterprise.ready(async () => {
+          const token = await grecaptcha.enterprise.execute(
+            "6Lf7EeUnAAAAAP7yRqBDv5bfJcYguwA4fzzCTt5P",
+            { action: "LOGIN" }
+          );
+          // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+          // reCAPTCHA Enterprise to the end user's browser.
+          // This token must be validated by creating an assessment.
+          // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+        });
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,9 +79,27 @@
         <h1>Contact Us</h1>
         <form action="" method="get">
           <div class="contact-typing-fields">
-            <input type="text" name="firstname" placeholder="First Name" />
-            <input type="text" name="lastname" placeholder="Last Name" />
-            <input type="email" name="email" placeholder="Email" />
+            <input
+              type="text"
+              spellcheck="false"
+              name="firstname"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              spellcheck="false"
+              name="lastname"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              spellcheck="false"
+              name="email"
+              placeholder="Email"
+              required
+            />
           </div>
           <textarea
             type="text"
@@ -73,12 +109,16 @@
           ></textarea>
 
           <div class="contact-check-fields">
-            <div class="contact-check">
+            <div
+              class="contact-check g-recaptcha"
+              data-sitekey="6LcYu-gnAAAAAKvhTXM1zy5gCDVpvuYktPU20JtP"
+            >
               <input
                 type="checkbox"
                 name="robot-check"
                 value="robot-check"
                 id="robot-check"
+                class=""
               />
 
               <label for="robot-check" class="robot-check-label"
@@ -86,7 +126,7 @@
               >
               <img src="image/recaptcha.svg" alt="recaptcha icon" />
             </div>
-            <input type="button" value="Send" class="send-button" />
+            <input type="submit" value="Send" class="send-button" />
           </div>
         </form>
       </section>
