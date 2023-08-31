@@ -9,7 +9,7 @@
         e.preventDefault();
         grecaptcha.enterprise.ready(async () => {
           const token = await grecaptcha.enterprise.execute(
-            "6LcYu-gnAAAAAKvhTXM1zy5gCDVpvuYktPU20JtP",
+            "6Lf7EeUnAAAAAP7yRqBDv5bfJcYguwA4fzzCTt5P",
             { action: "LOGIN" }
           );
           // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
@@ -110,7 +110,7 @@
           <div class="contact-check-fields">
             <div
               class="g-recaptcha"
-              data-sitekey="6LcYu-gnAAAAAKvhTXM1zy5gCDVpvuYktPU20JtP"
+              data-sitekey="6Lf7EeUnAAAAAP7yRqBDv5bfJcYguwA4fzzCTt5P"
             ></div>
 
             <input type="submit" value="Send" class="send-button" />
