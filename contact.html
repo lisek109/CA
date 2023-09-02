@@ -27,21 +27,36 @@
   </head>
   <body>
     <header>
-      <div class="header-nav">
-        <a href="index.html">
-          <img
-            src="image/RainyDays_Logo.png"
-            alt="Rainydays logo"
-            class="header-logo"
-        /></a>
-        <input type="text" placeholder="Search.." />
-        <a href="collections/men.html">Men</a>
-        <a href="collections/woman.html">Woman</a>
-        <div>
+      <nav class="header-nav">
+        <div class="left">
+          <div class="mobile-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle"
+              ><img src="image/menu.svg" alt="hamburger menu icon"
+            /></label>
+          </div>
+
+          <a href="index.html">
+            <img
+              src="image/RainyDays_Logo.png"
+              alt="Rainydays logo"
+              class="header-logo"
+          /></a>
+          <form action="get">
+            <input type="search" class="search" placeholder="Search.." />
+          </form>
+        </div>
+
+        <div class="center">
+          <a href="collections/men.html">Men</a>
+          <a href="collections/woman.html">Woman</a>
+        </div>
+
+        <aside>
           <img src="image/user.svg" alt="User icon" />
           <img src="image/shopping-cart.svg" alt="Shopping basket icon" />
-        </div>
-      </div>
+        </aside>
+      </nav>
     </header>
     <main class="contact-content">
       <section>
