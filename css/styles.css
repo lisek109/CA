@@ -1,7 +1,6 @@
 body {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   color: #22223b;
-  margin: 1;
 }
 
 a {
@@ -18,14 +17,6 @@ main {
   margin-right: 50px;
 }
 
-.header-logo {
-  width: 200px;
-}
-
-header img {
-  cursor: pointer;
-}
-
 header {
   background-color: #f2e9e4;
 }
@@ -38,8 +29,97 @@ footer {
   font-family: "Lora", Arial, Helvetica, sans-serif;
 }
 
-/* Home page */
+/* Nav */
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex: 1 50%;
+  align-items: center;
+  gap: 30px;
+}
+
+.mobile-menu,
+#menu-toggle {
+  display: none;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+header img {
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  gap: 100px;
+}
+
+.header-nav input {
+  border-radius: 25px;
+  border-color: #fff;
+  border-style: none;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  font-size: 1.2rem;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  font-size: 1.4rem;
+}
+
+.center a {
+  padding: 10px;
+}
+
+.header-nav aside {
+  display: flex;
+  flex: 0 0 auto;
+  justify-self: end;
+  gap: 30px;
+}
+
+.header-nav aside img {
+  padding: 10px;
+}
+
+.header-nav aside img:last-child {
+  padding-right: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .search,
+  .center {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav input {
+    width: 400px;
+  }
+}
+
+/* Home page */
 .main-text img {
   width: 80%;
 }
@@ -113,21 +193,21 @@ footer {
   justify-content: space-between;
 }
 
-.contact-check {
-  /* height: 40px;
-  width: 20%; */
+/* .contact-check {
+  height: 40px;
+  width: 20%;
   height: auto;
   border: #22223b solid 1px;
   padding: 5px 0px;
-  /* position: relative; */
+  position: relative;
   display: flex;
   align-items: center;
-}
+} */
 
-#robot-check {
-  /* position: absolute;
+/* #robot-check {
+  position: absolute;
   transform: translate(0, -50%);
-  top: 50%; */
+  top: 50%;
   margin-top: auto;
   margin-bottom: auto;
   height: 20px;
@@ -135,9 +215,9 @@ footer {
   margin-left: 25px;
   margin-right: 25px;
   cursor: pointer;
-}
+} */
 
-.robot-check-label {
+/* .robot-check-label {
   padding-right: 25px;
 }
 
@@ -147,7 +227,7 @@ footer {
   height: auto;
   max-height: 40px;
   width: 40px;
-}
+} */
 
 .send-button {
   height: auto;
