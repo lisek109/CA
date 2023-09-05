@@ -148,31 +148,19 @@ header img {
   padding-right: 0px;
 }
 
-@media screen and (max-width: 900px) {
-  .menu-label {
-    display: block;
-  }
-
-  .search,
-  .center {
-    display: none;
-  }
-
-  main {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .header-nav {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+.search,
+.center {
+  display: none;
 }
 
-@media screen and (min-width: 1200px) {
-  .header-nav input {
-    width: 400px;
-  }
+main {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.header-nav {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* Home page */
@@ -571,4 +559,24 @@ header img {
 .slider-nav {
   width: 445px;
   display: flex;
+}
+
+/* Media queries */
+
+/* Nav */
+
+@media screen and (max-width: 900px) {
+  .menu-label {
+    display: block;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav input {
+    width: 400px;
+  }
 }
