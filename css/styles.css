@@ -50,6 +50,35 @@ header {
   gap: 100px;
 }
 
+/* .bar {
+  display: block;
+  background-color: #333;
+  height: 4px;
+  width: 30px;
+  margin: 6px auto;
+  transition: 0.4s;
+} */
+
+/* #menu-toggle:checked + .hamburger-menu .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle:checked + .hamburger-menu .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .hamburger-menu .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+} */
+
+/* .hamburger-menu {
+  display: block;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  position: relative;
+} */
+
 .menu-label,
 #menu-toggle {
   display: none;
@@ -62,7 +91,7 @@ header {
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 115px;
+  /* top: 115px; */
   left: 0;
   background-color: #fff;
   width: 100%;
