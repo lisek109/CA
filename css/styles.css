@@ -1,6 +1,7 @@
 body {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   color: #22223b;
+  margin: 0px;
 }
 
 a {
@@ -168,9 +169,9 @@ header img {
   padding: 10px;
 }
 
-.header-nav aside img:last-child {
+/* .header-nav aside img:last-child {
   padding-right: 0px;
-}
+} */
 
 main {
   margin-left: 0px;
@@ -578,6 +579,51 @@ main {
 .slider-nav {
   width: 445px;
   display: flex;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.2rem;
+  height: 150px;
+}
+
+footer .footer-left {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-left a {
+  padding: 10px;
+}
+
+footer .footer-left a:last-child {
+  margin-left: 100px;
+}
+
+footer .footer-right {
+  margin-right: 50px;
+  max-height: 100%;
+}
+
+footer .footer-right a {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin: 10px 0px;
+}
+
+footer .footer-right a p {
+  padding-left: 15px;
+  margin: 10px 0px;
+}
+
+footer .footer-right a img {
+  height: 23px;
 }
 
 /* Media queries */
