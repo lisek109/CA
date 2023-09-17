@@ -1043,6 +1043,10 @@ footer .footer-right a img {
   .index-third-section {
     margin: 100px 0;
   }
+
+  .index-fourth-section {
+    margin-bottom: 100px;
+  }
 }
 
 /* Men Women */
@@ -1148,5 +1152,10 @@ footer .footer-right a img {
 
   .shopping-btn {
     order: 4;
+  }
+
+  .shopping-btn div {
+    width: 80%;
+    margin: 10px auto;
   }
 }

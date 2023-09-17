@@ -73,7 +73,7 @@
               class="header-logo"
           /></a>
           <form action="get">
-            <label for="search-field"></label>
+            <label style="display: none" for="search-field">Search field</label>
             <input
               type="search"
               name="search-field"
@@ -114,6 +114,7 @@
         <h1>Contact Us</h1>
         <form action="" method="post">
           <div class="contact-typing-fields">
+            <label style="display: none" for="firstname">First Name</label>
             <input
               type="text"
               spellcheck="false"
@@ -121,6 +122,7 @@
               placeholder="First Name"
               required
             />
+            <label style="display: none" for="lastname">Last Name</label>
             <input
               type="text"
               spellcheck="false"
@@ -128,6 +130,7 @@
               placeholder="Last Name"
               required
             />
+            <label style="display: none" for="email">Email</label>
             <input
               type="email"
               spellcheck="false"
@@ -136,6 +139,7 @@
               required
             />
           </div>
+          <label style="display: none" for="message">message</label>
           <textarea
             type="text"
             name="message"
@@ -143,6 +147,9 @@
             class="contact-big-field"
           ></textarea>
           <div class="contact-check-fields">
+            <label style="display: none" for="g-recaptcha"
+              >recaptcha checking</label
+            >
             <div
               class="g-recaptcha"
               data-sitekey="6LcYu-gnAAAAAKvhTXM1zy5gCDVpvuYktPU20JtP"
