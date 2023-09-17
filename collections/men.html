@@ -21,14 +21,44 @@
     <title>Rainydays | Men's collection</title>
   </head>
   <body>
-    <header>
+    <header class="hidden">
       <nav class="header-nav">
         <div class="left">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
           <div class="mobile-menu">
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle"
-              ><img src="../image/menu.svg" alt="hamburger menu icon"
-            /></label>
+            <ul>
+              <li>
+                <a href="../collections/woman.html"
+                  ><img
+                    src="../image/woman-sharp.svg"
+                    alt="woman collection icon"
+                  />
+                  Women's collection</a
+                >
+              </li>
+              <li>
+                <a href="../collections/men.html">
+                  <img src="../image/man.svg" alt="man collection icon" />Men's
+                  collection</a
+                >
+              </li>
+              <li>
+                <a href="../about.html"
+                  ><img src="../image/info.svg" alt="info icon" />About Us</a
+                >
+              </li>
+              <li>
+                <a href="../contact.html">
+                  <img src="../image/contact-support.svg" alt="contact icon" />
+                  Contact</a
+                >
+              </li>
+            </ul>
           </div>
 
           <a href="../index.html">
@@ -38,7 +68,13 @@
               class="header-logo"
           /></a>
           <form action="get">
-            <input type="search" class="search" placeholder="Search.." />
+            <label for="search-field"></label>
+            <input
+              type="search"
+              name="search-field"
+              class="search"
+              placeholder="Search.."
+            />
           </form>
         </div>
 

@@ -27,19 +27,12 @@
     <header class="hidden">
       <nav class="header-nav">
         <div class="left">
-          <!-- <div class="mobile-menu-icon"> -->
           <input type="checkbox" id="menu-toggle" />
-          <!-- <label for="menu-toggle" class="menu-label"
-            ><img src="image/menu.svg" alt="hamburger menu icon"
-          /></label> -->
-
           <label for="menu-toggle" class="hamburger-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </label>
-
-          <!-- </div> -->
           <div class="mobile-menu">
             <ul>
               <li>
@@ -78,7 +71,13 @@
               class="header-logo"
           /></a>
           <form action="get">
-            <input type="search" class="search" placeholder="Search.." />
+            <label for="search-field"></label>
+            <input
+              type="search"
+              name="search-field"
+              class="search"
+              placeholder="Search.."
+            />
           </form>
         </div>
 
