@@ -37,26 +37,15 @@ footer {
 
 /* Nav */
 
-header {
-  /* position: relative; make it working in @Media querry */
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  height: 12%; */
+nav aside a:hover {
+  scale: 1.2;
+  transition: 0.5s;
 }
 
-/* header.hidden {
-  transform: translateY(-100%);
-  opacity: 0;
+.center a:hover {
+  scale: 1.2;
+  transition: 0.5s;
 }
-
-body:hover head.hidden {
-  transform: translateY(0);
-  opacity: 0;
-} */
 
 .header-nav {
   display: flex;
@@ -118,7 +107,6 @@ body:hover head.hidden {
   left: 0;
   background-color: #fff;
   width: 100%;
-  /* height: 100%; */
   height: 100vh;
   overflow: hidden;
   transition: max-height 3s ease-out;
@@ -912,6 +900,11 @@ footer .footer-left {
 
 footer .footer-left a {
   padding: 10px;
+}
+
+footer .footer-left a:hover {
+  scale: 1.2;
+  transition: 0.5s;
 }
 
 footer .footer-left a:last-child {
